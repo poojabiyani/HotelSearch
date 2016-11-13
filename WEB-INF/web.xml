@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>project</display-name>
+  <welcome-file-list>
+    <welcome-file>Login.jsp</welcome-file>
+  </welcome-file-list>
+    
+    <servlet>
+    <servlet-name>check</servlet-name>
+    <servlet-class>project.CheckServlet</servlet-class>
+  </servlet>
+  
+    <servlet>
+    <servlet-name>hotel</servlet-name>
+    <servlet-class>project.HotelServlet</servlet-class>
+  </servlet>
+
+    <servlet>
+    <servlet-name>register</servlet-name>
+    <servlet-class>project.RegisterServlet</servlet-class>
+  </servlet>
+  
+    <servlet>
+    <servlet-name>room</servlet-name>
+    <servlet-class>project.RoomServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>check</servlet-name>
+    <url-pattern>/check</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>hotel</servlet-name>
+    <url-pattern>/hotel</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>register</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+    <servlet-name>room</servlet-name>
+    <url-pattern>/room</url-pattern>
+  </servlet-mapping>
+ 
+</web-app>
